@@ -23,3 +23,9 @@ else
 fi
 
 # Aliases
+alias v="nvim"
+alias w="cd ~/Documents/GitHub"
+alias dotfiles="cd ~/.dotfiles"
+alias h="history"
+alias hg="history | grep"
+alias c="clear"
