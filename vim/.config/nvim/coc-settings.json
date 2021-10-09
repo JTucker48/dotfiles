@@ -3,11 +3,12 @@
 	"coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "java", "json", "javascript", "html", "python"],
 	
 	// Explorer Config
-  "explorer.width": 50,
+  "explorer.width": 30,
   "explorer.icon.enableNerdfont": false,
   "explorer.previewAction.onHover": false,
+  "explorer.file.showHiddenFiles": true,
   "explorer.keyMappings.global": {
     "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit"
-	} 
+	}
 }
