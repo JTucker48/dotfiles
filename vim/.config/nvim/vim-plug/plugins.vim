@@ -8,12 +8,19 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-    " Better Syntax Support
+    " Syntax 
     Plug 'sheerun/vim-polyglot'
+    " Autocomplete
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'vim-scripts/java_getset.vim'
+    Plug 'vim-scripts/xhtml.vim'
+    Plug 'tpope/vim-commentary'
     " File Explorer
     Plug 'scrooloose/NERDTree'
     " Theme
     Plug 'liuchengxu/space-vim-dark'
-
     Plug 'joshdick/onedark.vim'
+    " tmux
+    Plug 'aserowy/tmux.nvim'
+    Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
