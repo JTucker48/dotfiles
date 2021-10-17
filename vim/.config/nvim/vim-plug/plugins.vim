@@ -10,6 +10,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Syntax 
     Plug 'sheerun/vim-polyglot'
+    Plug 'digitaltoad/vim-pug'
+    Plug 'dNitro/vim-pug-complete', { 'for': ['jade', 'pug'] }
     " Autocomplete
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'vim-scripts/java_getset.vim'
@@ -20,6 +22,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Theme
     Plug 'liuchengxu/space-vim-dark'
     Plug 'joshdick/onedark.vim'
+    Plug 'morhetz/gruvbox'
+    Plug 'rakr/vim-one'
     " tmux
     Plug 'aserowy/tmux.nvim'
     Plug 'christoomey/vim-tmux-navigator'
