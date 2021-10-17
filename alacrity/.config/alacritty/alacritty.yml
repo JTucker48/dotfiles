@@ -4,31 +4,31 @@ window:
     columns: 140
     lines: 38
   padding:
-    x: 10
-    y: 10
+    x: 5
+    y: 5
   decorations: full #Still won't show in a window manger, but will in a desktop environment
 scrolling:
   history: 10000
   multiplier: 3
-background_opacity: 0.9
+background_opacity: 0.95
 window.dynamic_title: true
 
 # Font Customization
 font:
   normal:
-    family: monospace
+    family: hack
     style: Regular
 
   bold:
-    family: monospace
+    family: hack
     style: Bold
 
   italic:
-    family: monospace
+    family: hack
     style: Italic
 
   bold_italic:
-    family: monospace
+    family: hack
     style: Bold Italic
   size: 11
   offset:
@@ -48,6 +48,8 @@ cursor:
     blinking: off
     blink-interval: 750
     unfocused_hollow: true
+  text: '#af00d7'
+  cursor: '#af00d7'
 
 key_bindings:
   - { key: N, mods: Control, action: SpawnNewInstance }

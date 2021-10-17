@@ -1,7 +1,10 @@
 # ZSH path
 export ZSH="/home/josh/.oh-my-zsh"
 
-ZSH_THEME="bureau"
+ZSH_THEME=""
+fpath+=/home/josh/.dotfiles/zsh/.oh-my-zsh/themes/pure
+autoload -U promptinit; promptinit
+prompt pure
 
 DISABLE_AUTO_UPDATE="true"
 

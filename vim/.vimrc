@@ -5,6 +5,10 @@ set number
 " Theme
 colorscheme space-vim-dark
 au ColorScheme * hi Normal ctermbg=none guibg=no
+highlight Normal ctermbg=none
+highlight NonText ctermbg=none
+
+
 set laststatus=2
 set splitbelow
 
