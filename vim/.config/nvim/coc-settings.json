@@ -10,5 +10,6 @@
   "explorer.keyMappings.global": {
     "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit"
-	}
+  },
+  "java.format.settings.url": "/home/josh/.config/coc/extensions/node_modules/redhat.java/eclipse-formatter.xml:q"
 }
