@@ -1,6 +1,7 @@
 " Line Numbering
 set relativenumber
 set number
+let g:airline_detect_whitespace=0
 
 " Theme
 colorscheme space-vim-dark
