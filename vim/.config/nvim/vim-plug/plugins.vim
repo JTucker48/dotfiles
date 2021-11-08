@@ -13,6 +13,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'digitaltoad/vim-pug'
     Plug 'dNitro/vim-pug-complete', { 'for': ['jade', 'pug'] }
     Plug 'rodjek/vim-puppet'
+    Plug 'chrisbra/colorizer'
     " Autocomplete
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'vim-scripts/java_getset.vim'
@@ -26,6 +27,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'joshdick/onedark.vim'
     Plug 'morhetz/gruvbox'
     Plug 'rakr/vim-one'
+    Plug 'NLKNguyen/papercolor-theme'
 
     " Plug 'vim-airline/vim-airline'
     " Plug 'vim-airline/vim-airline-themes'
