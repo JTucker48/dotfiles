@@ -4,7 +4,8 @@ set number
 let g:airline_detect_whitespace=0
 
 " Theme
-colorscheme space-vim-dark
+set background=dark
+colorscheme PaperColor 
 au ColorScheme * hi Normal ctermbg=none guibg=no
 highlight Normal ctermbg=none
 highlight NonText ctermbg=none

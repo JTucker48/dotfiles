@@ -4,6 +4,11 @@ export ZSH="/home/josh/.oh-my-zsh"
 ZSH_THEME=""
 fpath+=/home/josh/.dotfiles/zsh/.oh-my-zsh/themes/pure
 autoload -U promptinit; promptinit
+
+zstyle :prompt:pure:path color yellow
+
+
+
 prompt pure
 
 DISABLE_AUTO_UPDATE="true"
@@ -37,3 +42,4 @@ alias h="history"
 alias hg="history | grep"
 alias c="clear"
 alias lt="ls --human-readable --size -1 -S --classify"
+alias gdwm="cd /usr/local/src/dwm"
