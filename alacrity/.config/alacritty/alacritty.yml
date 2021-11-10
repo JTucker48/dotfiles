@@ -10,7 +10,7 @@ window:
 scrolling:
   history: 10000
   multiplier: 3
-background_opacity: 0.95
+background_opacity: 0.97
 window.dynamic_title: true
 
 # Font Customization
@@ -30,7 +30,7 @@ font:
   bold_italic:
     family: hack
     style: Bold Italic
-  size: 8 
+  size: 12
   offset:
     x: 0
     y: 0
