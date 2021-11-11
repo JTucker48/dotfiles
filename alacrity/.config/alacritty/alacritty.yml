@@ -1,88 +1,50 @@
-# Window Customization
+#     ___   __             _ __  __         _____          ____     
+#    / _ | / /__ _________(_) /_/ /___ __  / ___/__  ___  / _(_)__ _
+#   / __ |/ / _ `/ __/ __/ / __/ __/ // / / /__/ _ \/ _ \/ _/ / _ `/
+#  /_/ |_/_/\_,_/\__/_/ /_/\__/\__/\_, /  \___/\___/_//_/_//_/\_, / 
+#                                 /___/                      /___/  
+
+shell:
+  program: /bin/tmux 
+  args:
+    - new-session
+    - -A
+    - -D
+    - -s
+    - main
+
 window:
   dimensions:
     columns: 140
-    lines: 38
+    lines:   38
   padding:
     x: 5
     y: 5
-  decorations: full #Still won't show in a window manger, but will in a desktop environment
+  decorations: full 
+
+
 scrolling:
-  history: 10000
+  history:    10000
   multiplier: 3
-background_opacity: 0.97
+
+
+background_opacity:   0.97
 window.dynamic_title: true
 
-# Font Customization
-font:
-  normal:
-    family: hack
-    style: Regular
-
-  bold:
-    family: hack
-    style: Bold
-
-  italic:
-    family: hack
-    style: Italic
-
-  bold_italic:
-    family: hack
-    style: Bold Italic
-  size: 12
-  offset:
-    x: 0
-    y: 0
-  glyph_offset:
-    x: 0
-    y: 0
-  use_thin_strokes: false
-  debug:
-    persistent_logging: false
-draw_bold_text_with_bright_colors: true
-
-# Colors (PaperColor - Dark)
-colors:
-  # Default colors
-  primary:
-    background: '0x1c1c1c'
-    foreground: '0x878787'
-
-  cursor:
-    text: '0x1c1c1c'
-    cursor: '0x878787'
-
-  # Normal colors
-  normal:
-    black:   '0x1c1c1c'
-    red:     '0xaf005f'
-    green:   '0x5faf00'
-    yellow:  '0xd7af5f'
-    blue:    '0x5fafd7'
-    magenta: '0x808080'
-    cyan:    '0xd7875f'
-    white:   '0xd0d0d0'
-
-  # Bright colors
-  bright:
-    black:   '0x585858'
-    red:     '0x5faf5f'
-    green:   '0xafd700'
-    yellow:  '0xaf87d7'
-    blue:    '0xffaf00'
-    magenta: '0xff5faf'
-    cyan:    '0x00afaf'
-    white:   '0x5f8787'
 
 cursor:
   style:
-    shape: Beam
-    blinking: off
-    blink-interval: 750
+    shape:            Beam
+    blinking:         off
+    blink-interval:   750
     unfocused_hollow: true
-  text: '#af00d7'
-  cursor: '#af00d7'
+  text:   '#af00d7'
+  cursor: '#d7875f'
 
-key_bindings:
-  - { key: N, mods: Control, action: SpawnNewInstance }
+
+import:
+  - ~/.config/alacritty/colourscheme.yaml
+  - ~/.config/alacritty/font.yaml
+  - ~/.config/alacritty/keybindings.yaml
+
+
