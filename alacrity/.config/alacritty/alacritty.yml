@@ -10,8 +10,6 @@ shell:
     - new-session
     - -A
     - -D
-    - -s
-    - main
 
 window:
   dimensions:
