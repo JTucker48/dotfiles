@@ -1,3 +1,0 @@
-[submodule "zsh/.oh-my-zsh/themes/pure"]
-	path = zsh/.oh-my-zsh/themes/pure
-	url = git@github.com:sindresorhus/pure.git
