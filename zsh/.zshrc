@@ -5,7 +5,20 @@ ZSH_THEME=""
 fpath+=/home/josh/.dotfiles/zsh/.oh-my-zsh/themes/pure
 autoload -U promptinit; promptinit
 
-zstyle :prompt:pure:path color yellow
+zstyle :prompt:pure:user color '#af87d7'
+zstyle :prompt:pure:host color '#5faf5f'
+zstyle :prompt:pure:path color '#d7875f'
+
+zstyle :prompt:pure:git:branch color '#5faf5f'
+zstyle :prompt:pure:git:dirty color '#af87d7'
+
+zstyle :prompt:pure:git:action color '#af005f'
+zstyle :prompt:pure:git:arrow color '#af005f'
+zstyle :prompt:pure:git:stash color '#af005f'
+zstyle :prompt:pure:execution_time color '#af87d7'
+zstyle :prompt:pure:promt:success color '#5faf00'
+
+zstyle :prompt:pure:virtualenv color '#af87d7'
 
 
 
