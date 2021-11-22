@@ -25,7 +25,9 @@ ENABLE_CORRECTION="false"
 
 COMPLETION_WAITING_DOTS="true"
 
-HIST_STAMPS="%d/%m/%y %T"
+HISTFILE="$HOME/.zsh_history"
+HISTSIZE=100000
+SAVEHIST=100000
 
 ZSH_TMUX_AUTOSTART="true"
 
@@ -37,6 +39,9 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
   export EDITOR='nvim'
 fi
+
+ssh-add ~/.ssh/github
+clear
 
 # Aliases
 alias v="nvim"
