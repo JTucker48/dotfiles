@@ -43,7 +43,7 @@ bindsym $mod+p exec "rofi -modi drun,run -show drun"
 
 # set gaps
 for_window [class=".*"] border pixel 0
-gaps inner 10
+gaps inner 5
 
 # change focus
 bindsym $mod+h focus left
@@ -139,11 +139,14 @@ bar {
         status_command python3 ~/.config/i3/myi3pystatus.py
         position bottom
         font pango:hack 12
+        separator_symbol " | "
+        tray_padding 0
 
         colors {
                 background #1c1c1c
-                focused_workspace #d7875f #1c1c1c #d7875f
-                inactive_workspace #af87d7 #1c1c1c #af87d7
+                separator #d0d0d0
+                focused_workspace #af87d7 #1c1c1c #af87d7
+                inactive_workspace #5f9797 #1c1c1c #5f9797
                 urgent_workspace #ff5faf #1c1c1c #ff5faf
 
         }
