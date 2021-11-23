@@ -9,18 +9,18 @@ bind-key k up
 bind-key l open
 
 # Colors from PaperColor https://github.com/NLKNguyen/papercolor-theme
-color article                              color252 color234
-color background                           color252 color234
+color article                              color252 default
+color background                           default  default
 color info                                 color234 color66
-color listfocus                            color140 color234
-color listfocus_unread                     color140 color234 bold
-color listnormal                           color252 color234
-color listnormal_unread                    color179 color234 bold
+color listfocus                            color140 default
+color listfocus_unread                     color140 default bold
+color listnormal                           color252 default
+color listnormal_unread                    color179 default bold
 
-highlight article "^Feed:.*"               color179 color234
-highlight article "^Title:.*"              color71 color234
-highlight article "^Author:.*"             color214 color234
-highlight article "^Link:.*"               color66 color234
-highlight article "^Date:.*"               color70 color234
-highlight article "\\[[0-9]\\+\\]"         color71 color234 bold
-highlight article "\\[[^0-9].*[0-9]\\+\\]" color140 color234 bold
+highlight article "^Feed:.*"               color179 default
+highlight article "^Title:.*"              color71 default
+highlight article "^Author:.*"             color214 default
+highlight article "^Link:.*"               color66 default
+highlight article "^Date:.*"               color70 default
+highlight article "\\[[0-9]\\+\\]"         color71 default bold
+highlight article "\\[[^0-9].*[0-9]\\+\\]" color140 default bold
