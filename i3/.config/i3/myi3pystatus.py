@@ -37,9 +37,14 @@ status.register("network",
     color_down  = cd1,
     )
 
-status.register("spotify",
-    color      = cd11,
-    format     = "{title} - {artist}"
-    )
+#status.register("spotify",
+#    color      = cd11,
+#    format     = "{title} - {artist}",
+#    format_no_player = "",
+#    )
+
+status.register("cmus",
+    format     = "{status} {title} - {artist}",
+                )
 
 status.run()
