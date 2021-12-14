@@ -20,10 +20,8 @@
  cd14: #00afaf;
  cd15: #5f8787;
 
-    blue: var(cd4);   
-    red: var(cd1);
     background: var(cd0);
-    foreground: var(cd11);
+    foreground: var(cd4);
     lightbg: var(cd0);
     lightfg: var(cd7);
 
@@ -36,14 +34,14 @@
     urgent-background:           var(background);
 
     normal-foreground:           var(foreground);
-    active-foreground:           var(blue);
-    urgent-foreground:           var(red);
+    active-foreground:           var(cd4);
+    urgent-foreground:           var(cd1);
 
     selected-normal-background:  var(background);
-    selected-active-background:  var(blue);
-    selected-urgent-background:  var(red);
+    selected-active-background:  var(cd4);
+    selected-urgent-background:  var(cd1);
 
-    selected-normal-foreground:  var(cd6);
+    selected-normal-foreground:  var(cd13);
     selected-active-foreground:  var(background);
     selected-urgent-foreground:  var(background);
 
@@ -52,8 +50,8 @@
     alternate-urgent-background: var(lightbg);
 
     alternate-normal-foreground: var(foreground);
-    alternate-active-foreground: var(blue);
-    alternate-urgent-foreground: var(red);
+    alternate-active-foreground: var(cd4);
+    alternate-urgent-foreground: var(cd1);
 
     spacing:                     2;
 }
@@ -109,13 +107,14 @@ element-icon {
     text-color:       inherit;
 }
 window {
-    padding:          5;
+    padding:          0;
     width:            450;
     background-color: var(background);
-    border:           1;
+    border:           4;
+    border-radius: 10px 10px 70px 10px;
 }
 mainbox {
-    padding: 0;
+    padding: 10;
     border:  0;
 }
 message {
@@ -135,11 +134,11 @@ listview {
     border:       2px dash 0px 0px ;
 }
 scrollbar {
-    width:        4px ;
+    width:        5px ;
     padding:      0;
-    handle-width: 8px ;
+    handle-width: 10px ;
     border:       0;
-    handle-color: var(normal-foreground);
+    handle-color: var(cd7);
 }
 sidebar {
     border-color: var(separatorcolor);
@@ -170,21 +169,21 @@ inputbar {
     padding:    1px ;
     spacing:    0px ;
     text-color: var(normal-foreground);
-    children:   [ prompt,textbox-prompt-colon,entry,num-filtered-rows,textbox-num-sep,num-rows,case-indicator ];
+    children:   [ prompt,textbox-prompt-colon,entry,num-filtered,textbox-num-sep,num-rows,case-indicator ];
 }
 case-indicator {
     spacing:    0;
     text-color: var(normal-foreground);
 }
 entry {
-    text-color:        var(cd6);
+    text-color:        var(cd13);
     spacing:           0;
     placeholder-color: rgba ( 128, 128, 128, 100 % );
     placeholder:       "";
 }
 prompt {
-    spacing:    0;
-    text-color: var(normal-foreground);
+    spacing:    10;
+    text-color: var(cd7);
 }
 textbox-prompt-colon {
     margin:     0px 0.3000em 0.0000em 0.0000em ;
