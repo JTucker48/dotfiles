@@ -1,11 +1,12 @@
 # ZSH path
 fpath+=$HOME/.zsh/pure
+export PATH=/usr/local/go/bin:$PATH
 
 autoload -U promptinit; promptinit
 
 zstyle :prompt:pure:user color '#af87d7'
 zstyle :prompt:pure:host color '#5faf5f'
-zstyle :prompt:pure:path color '#d7875f'
+zstyle :prompt:pure:path color '#00afaf'
 
 zstyle :prompt:pure:git:branch color '#5faf5f'
 zstyle :prompt:pure:git:dirty color '#af87d7'
