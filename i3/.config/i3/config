@@ -44,7 +44,8 @@ set $outer 0
 gaps inner $inner
 gaps outer $outer
 
-client.focused #af87d7 #af87d7 #af87d7
+#client.focused #af87d7 #af87d7 #af87d7
+client.focused blue blue blue
 
 bindsym $mod+g exec compton; gaps inner all set $inner; gaps outer all set $outer
 bindsym $mod+Ctrl+g exec compton; gaps inner all set 0; gaps outer all set 0
