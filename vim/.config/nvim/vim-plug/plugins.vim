@@ -8,30 +8,37 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+    Plug 'mhinz/vim-startify'
+
     " Syntax
     Plug 'sheerun/vim-polyglot'
     Plug 'digitaltoad/vim-pug'
     Plug 'dNitro/vim-pug-complete', { 'for': ['jade', 'pug'] }
     Plug 'rodjek/vim-puppet'
     Plug 'chrisbra/colorizer'
+
     " Autocomplete
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'vim-scripts/java_getset.vim'
     Plug 'vim-scripts/xhtml.vim'
     Plug 'tpope/vim-commentary'
     Plug 'tpope/vim-surround'
+
     " File Explorer
     Plug 'scrooloose/NERDTree'
-    " Theme
-    Plug 'liuchengxu/space-vim-dark'
-    Plug 'joshdick/onedark.vim'
-    Plug 'morhetz/gruvbox'
-    Plug 'rakr/vim-one'
-    Plug 'NLKNguyen/papercolor-theme'
+    Plug 'Xuyuanp/nerdtree-git-plugin'
 
-    " Plug 'vim-airline/vim-airline'
-    " Plug 'vim-airline/vim-airline-themes'
+    " git
+    Plug 'mhinz/vim-signify'
+
     " tmux
     Plug 'aserowy/tmux.nvim'
     Plug 'christoomey/vim-tmux-navigator'
+
+    " Theme
+    Plug 'NLKNguyen/papercolor-theme'
+    Plug 'ryanoasis/vim-devicons'
+    Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+
+
 call plug#end()
