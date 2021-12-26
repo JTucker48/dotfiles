@@ -4,19 +4,19 @@ export PATH=/usr/local/go/bin:$PATH
 
 autoload -U promptinit; promptinit
 
-zstyle :prompt:pure:user color '#af87d7'
-zstyle :prompt:pure:host color '#5faf5f'
-zstyle :prompt:pure:path color '#00afaf'
+zstyle :prompt:pure:user color 'yellow'
+zstyle :prompt:pure:host color 'red'
+zstyle :prompt:pure:path color 'blue'
 
-zstyle :prompt:pure:git:branch color '#5faf5f'
-zstyle :prompt:pure:git:dirty color '#af87d7'
+zstyle :prompt:pure:git:branch color 'green'
+zstyle :prompt:pure:git:dirty color 'yellow'
 
-zstyle :prompt:pure:git:action color '#af005f'
-zstyle :prompt:pure:git:arrow color '#af005f'
-zstyle :prompt:pure:git:stash color '#af005f'
-zstyle :prompt:pure:execution_time color '#af87d7'
+zstyle :prompt:pure:git:action color 'red'
+zstyle :prompt:pure:git:arrow color 'red'
+zstyle :prompt:pure:git:stash color 'red'
+zstyle :prompt:pure:execution_time color 'yellow'
 
-zstyle :prompt:pure:virtualenv color '#af87d7'
+zstyle :prompt:pure:virtualenv color 'yellow'
 
 prompt pure
 
@@ -55,3 +55,4 @@ alias c="clear"
 alias lt="ls --human-readable --size -1 -S --classify"
 alias gdwm="cd /usr/local/src/dwm"
 alias fixaudio="systemctl --user restart pulseaudio.service"
+alias note="sh /home/josh/.dotfiles/notescript.sh"

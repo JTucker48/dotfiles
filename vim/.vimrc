@@ -3,10 +3,10 @@ set relativenumber
 set number
 
 " Theme
+set background=dark
 colorscheme PaperColor 
 highlight Normal ctermbg=none
 highlight NonText ctermbg=none
-
 
 set laststatus=2
 set splitbelow
@@ -26,9 +26,29 @@ inoremap <silent><expr> <Tab>
       \ coc#refresh()
 
 " ExplorerBindings
-nmap <F2> :CocCommand explorer<CR>
-" Comment Bindings
-nmap <C-_> gc<CR>
+nmap <F2> :NERDTreeToggle<CR>
+
+let NERDTreeShowHidden=1
+let NERDTreeMapCustomOpen ="l"
+let NERDTreeMapActivateNode ="h"
+let NERDTreeMapOpenSplit = "v"
+let g:NERDTreeGitStatusUseNerdFonts = 1
+highlight StartifyHeader ctermfg=10
+let g:nvimascii = [
+\'               _         ',
+\'   ____ _   __(_)___ ___ ',
+\'  / __ \ | / / / __ `__ \',
+\' / / / / |/ / / / / / / /',
+\'/_/ /_/|___/_/_/ /_/ /_/ ',
+\]                        
+let g:startify_padding_left = 10
+let g:startify_custom_header = g:nvimascii
+
+ let g:startify_lists = [
+          \ { 'type': 'files',     'header': ['   Recent ']            },
+          \ { 'type': 'dir',       'header': ['   Recent '. getcwd()] },
+          \ ]
+
 " Split Navigation Bindings
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>

@@ -1,6 +1,6 @@
 {
 	// Formatting Config
-	"coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "java", "json", "javascript", "html", "python"],
+	"coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "java", "json", "javascript", "html", "python", "go"],
 	
 	// Explorer Config
   "explorer.width": 30,
