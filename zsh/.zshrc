@@ -35,6 +35,11 @@ ZSH_TMUX_AUTOSTART="true"
 # Plugins List
 plugins=(git tmux)
 
+if [ -z "$SSH_AUTH_SOCK" ] ; then
+ eval `ssh-agent -s`
+ ssh-add ~/.ssh/github
+fi
+
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
