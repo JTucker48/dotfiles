@@ -36,16 +36,16 @@ bindsym $mod+p exec "rofi -modi drun,run -show drun"
 bindsym $mod+Shift+q kill
 
 # Set Gaps
-for_window [class=".*"] border pixel 2
+for_window [class=".*"] border pixel 0
 
-set $inner 10
+set $inner 5
 set $outer 0
 
 gaps inner $inner
 gaps outer $outer
 
 #client.focused #af87d7 #af87d7 #af87d7
-client.focused blue blue blue
+#client.focused blue blue blue
 
 bindsym $mod+g exec compton; gaps inner all set $inner; gaps outer all set $outer
 bindsym $mod+Ctrl+g exec compton; gaps inner all set 0; gaps outer all set 0
@@ -130,21 +130,23 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
+exec_always --no-startup-id $HOME/.dotfiles/polybar/launch.sh
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        status_command python3 ~/.config/i3/myi3pystatus.py
-        position bottom
-        font pango:hack 12
-        separator_symbol " | "
-        tray_padding 0
-
-        colors {
-                background #1c1c1c
-                separator #d0d0d0
-                focused_workspace #af87d7 #1c1c1c #af87d7
-                inactive_workspace #5f9797 #1c1c1c #5f9797
-                urgent_workspace #ff5faf #1c1c1c #ff5faf
-
-        }
-}
+#bar {
+#        status_command python3 ~/.config/i3/myi3pystatus.py
+#        position bottom
+#        font pango:hack 12
+#        separator_symbol " | "
+#        tray_padding 0
+#
+#        colors {
+#                background #1c1c1c
+#                separator #d0d0d0
+#                focused_workspace #af87d7 #1c1c1c #af87d7
+#                inactive_workspace #5f9797 #1c1c1c #5f9797
+#                urgent_workspace #ff5faf #1c1c1c #ff5faf
+#
+#        }
+#}
