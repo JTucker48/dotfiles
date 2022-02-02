@@ -61,3 +61,4 @@ alias lt="ls --human-readable --size -1 -S --classify"
 alias gdwm="cd /usr/local/src/dwm"
 alias fixaudio="systemctl --user restart pulseaudio.service"
 alias note="sh /home/josh/.dotfiles/notescript.sh"
+[[ /usr/bin/kubectl ]] && source <(kubectl completion zsh)
