@@ -26,6 +26,7 @@ scrolling:
   multiplier: 3
 
 
+window.opacity:   1
 window.dynamic_title: true
 
 
@@ -40,7 +41,8 @@ cursor:
 
 
 import:
-  - ~/.config/alacritty/guvbox-dark.yaml
+  - ~/.config/alacritty/colourscheme.yaml
+    #  - ~/.config/alacritty/papercolor-light.yml
   - ~/.config/alacritty/font.yaml
   - ~/.config/alacritty/keybindings.yaml
 
