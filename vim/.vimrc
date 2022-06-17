@@ -3,25 +3,16 @@ set relativenumber
 set number
 
 " Theme
-set background=light
-colorscheme PaperColor 
 highlight Normal ctermbg=none
 highlight NonText ctermbg=none
+
+let g:rainbow_active = 1
 
 set laststatus=2
 set splitbelow
 
 autocmd FileType markdown setlocal spell spelllang=en_uk
 set spellsuggest=best,9
-
-" Key Mappings
-" tnoremap <C->
-
-inoremap <silent><expr> <Tab>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<Tab>" :
-      \ coc#refresh()
-
 
 highlight StartifyHeader ctermfg=10
 let g:nvimascii = [

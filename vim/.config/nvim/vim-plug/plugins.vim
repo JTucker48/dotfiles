@@ -12,11 +12,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Syntax
     Plug 'sheerun/vim-polyglot'
-    Plug 'digitaltoad/vim-pug'
     Plug 'chrisbra/colorizer'
+    Plug 'frazrepo/vim-rainbow'
 
     " Autocomplete
-    Plug 'tpope/vim-commentary'
     Plug 'tpope/vim-surround'
 
     " tmux
