@@ -1,3 +1,6 @@
+urls-source "opml"
+opml-url "http://petpi:7070/opml/export"
+
 unbind-key h
 unbind-key j
 unbind-key k
