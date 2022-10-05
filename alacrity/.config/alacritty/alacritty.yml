@@ -18,7 +18,8 @@ window:
   padding:
     x: 2
     y: 2
-  decorations: full 
+  decorations: none 
+  opacity: 0.8
 
 
 scrolling:
@@ -40,8 +41,8 @@ cursor:
 
 
 import:
-  - ~/.config/alacritty/guvbox-dark.yaml
-  - ~/.config/alacritty/font.yaml
-  - ~/.config/alacritty/keybindings.yaml
+  - ~/.config/alacritty/papercolor-dark.yml
+  - ~/.config/alacritty/font.yml
+  - ~/.config/alacritty/keybindings.yml
 
 
