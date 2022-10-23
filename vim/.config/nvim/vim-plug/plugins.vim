@@ -17,6 +17,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Autocomplete
     Plug 'tpope/vim-surround'
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
     " tmux
     Plug 'aserowy/tmux.nvim'
