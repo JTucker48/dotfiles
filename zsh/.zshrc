@@ -1,5 +1,6 @@
 # ZSH path
 fpath+=$HOME/.zsh/pure
+fpath+=$HOME/.zsh/aliases
 export PATH=/usr/local/go/bin:$PATH
 
 autoload -U promptinit; promptinit
@@ -35,15 +36,3 @@ fi
 ssh-add ~/.ssh/github
 clear
 
-# Aliases
-alias v="nvim"
-alias vim="nvim"
-alias w="cd ~/Documents/GitHub"
-alias dotfiles="cd ~/.dotfiles"
-alias h="history"
-alias hg="history | grep"
-alias c="clear"
-alias lt="ls --human-readable --size -1 -S --classify"
-alias gdwm="cd /usr/local/src/dwm"
-alias fixaudio="systemctl --user restart pulseaudio.service"
-alias note="sh /home/josh/.dotfiles/notescript.sh"
