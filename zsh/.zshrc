@@ -1,6 +1,5 @@
 # ZSH path
 fpath+=$HOME/.zsh/pure
-fpath+=$HOME/.zsh/aliases
 export PATH=/usr/local/go/bin:$PATH
 
 autoload -U promptinit; promptinit
@@ -20,12 +19,7 @@ SAVEHIST=100000
 ZSH_TMUX_AUTOSTART="true"
 
 # Plugins List
-plugins=(git tmux)
-
-if [ -z "$SSH_AUTH_SOCK" ] ; then
- eval `ssh-agent -s`
- ssh-add ~/.ssh/github
-fi
+plugins=(git tmux ssh-agent)
 
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
@@ -33,6 +27,8 @@ else
   export EDITOR='nvim'
 fi
 
-ssh-add ~/.ssh/github
-clear
-
+if [ -f ~/.zsh/.aliases ]; then
+    source ~/.zsh/.aliases
+else
+    print "404: ~/.zsh/.aliases not found."
+fi
