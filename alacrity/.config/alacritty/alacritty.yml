@@ -19,7 +19,7 @@ window:
     x: 2
     y: 2
   decorations: none 
-  opacity: 0.8
+  opacity: 1
 
 
 scrolling:
@@ -41,7 +41,7 @@ cursor:
 
 
 import:
-  - ~/.config/alacritty/papercolor-dark.yml
+  - ~/.config/alacritty/challenger-deep.yml
   - ~/.config/alacritty/font.yml
   - ~/.config/alacritty/keybindings.yml
 
