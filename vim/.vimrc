@@ -1,12 +1,13 @@
 " Line Numbering
 set relativenumber
-set number
+set scrolloff=5
+
 
 " Theme
 highlight Normal ctermbg=none
 highlight NonText ctermbg=none
 
-set laststatus=2
+set laststatus=0
 set splitbelow
 
 autocmd FileType markdown setlocal spell spelllang=en_uk
