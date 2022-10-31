@@ -8,8 +8,6 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-    Plug 'mhinz/vim-startify'
-
     " Syntax
     Plug 'sheerun/vim-polyglot'
     Plug 'chrisbra/colorizer'
@@ -23,7 +21,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'aserowy/tmux.nvim'
     Plug 'christoomey/vim-tmux-navigator'
 
-    " Theme
-    Plug 'NLKNguyen/papercolor-theme'
 
 call plug#end()
