@@ -1,0 +1,13 @@
+[user]
+	email = "josh@jtucker.me.uk"
+	name = "Josh Tucker"
+[core]
+	editor = nvim
+[web]
+	browser = firefox
+[color]
+	ui = true
+[init]
+	defaultBranch = main
+[alias]
+	his = !git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
