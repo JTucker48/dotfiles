@@ -1,0 +1,5 @@
+alias v="nvim"
+alias vim="nvim"
+alias dotfiles="cd ~/dotfiles"
+alias h="history"
+alias c="clear"
