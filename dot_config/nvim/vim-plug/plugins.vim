@@ -14,12 +14,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'frazrepo/vim-rainbow'
 
     " Autocomplete
-    Plug 'tpope/vim-surround'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
     " tmux
     Plug 'aserowy/tmux.nvim'
     Plug 'christoomey/vim-tmux-navigator'
 
+    " Formattting
+    Plug 'sbdchd/neoformat'
 
 call plug#end()

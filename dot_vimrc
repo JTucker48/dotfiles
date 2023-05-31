@@ -2,13 +2,14 @@
 set relativenumber
 set scrolloff=5
 
-
 " Theme
 highlight Normal ctermbg=none
 highlight NonText ctermbg=none
 
 set laststatus=0
 set splitbelow
+
+autocmd BufWritePre <buffer> lua vim.lsp.buf.format()
 
 autocmd FileType markdown setlocal spell spelllang=en_uk
 set spellsuggest=best,9

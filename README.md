@@ -1,6 +1,5 @@
-# dotfiles
+# 🏡 dotfiles
 
 ## setup
 
-* `sudo apt install stow`
-* stow whatever you want
+`sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply Josh-Tucker`
