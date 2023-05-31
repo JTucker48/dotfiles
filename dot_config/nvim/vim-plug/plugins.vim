@@ -14,7 +14,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'frazrepo/vim-rainbow'
 
     " Autocomplete
-    Plug 'tpope/vim-surround'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
     " tmux
@@ -23,6 +22,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Formattting
     Plug 'sbdchd/neoformat'
-
 
 call plug#end()
