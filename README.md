@@ -2,4 +2,4 @@
 
 ## setup
 
-`sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply Josh-Tucker`bash
+`sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply Josh-Tucker`
